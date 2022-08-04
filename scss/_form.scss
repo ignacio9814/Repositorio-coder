@@ -1,0 +1,39 @@
+
+/*<!--seccion formulario-->*/
+
+
+
+.form {
+  
+    width: 500px;
+    margin: 200px;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 200px;
+    border-radius: 16px;
+}
+.form h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.form input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.form textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.parrafo-1 p{
+    float: left ;
+    position: absolute;
+}
