@@ -5,13 +5,14 @@
 
 .form {
   
-    width: 500px;
+    width: 90%;
     margin: 200px;
     background: rgba(0,0,0,0.4);
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 200px;
     border-radius: 16px;
+    max-width: 500px;
 }
 .form h2{
     color: #fff;
@@ -36,4 +37,10 @@
 .parrafo-1 p{
     float: left ;
     position: absolute;
+}
+@media (max-width:425px) {
+    .form h2 {
+        font-size: 1.8rem;
+    }
+    
 }

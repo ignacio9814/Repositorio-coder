@@ -1,49 +1,41 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 html {
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
 
 /*<!--GENERAL-->*/
 body {
-  font-family: "Roboto", sans-serif;
-  margin-top: 200px !important;
+  font-family: 'Roboto', sans-serif;
+ 
   background-attachment: fixed;
   margin: 0px;
-  background-image: linear-gradient(135deg, #ff9583, rgba(115, 152, 225, 0.6784313725), #e4e4e4, #cbcbdb, rgba(251, 185, 144, 0.7098039216), rgba(66, 137, 209, 0.7019607843), #e9a718);
-}
+  background-image: url(../img/fondo\ 14.png) ; 
+background-repeat: no-repeat;
+background-size: cover;}
 
 h1 {
   font-size: 3.5em;
-  text-align: center;
-}
+  text-align: center; }
 
 h2 {
-  font-size: 2.7em;
-}
+  font-size: 2.7em; }
 
 h3 {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 p {
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 li {
-  font-size: 1.25em;
-}
+  font-size: 1.25em; }
 
 button {
   font-size: 1.25em;
@@ -53,43 +45,35 @@ button {
   border: 2px solid rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
-  background-color: #31367a;
-}
+  background-color: #31367a; }
 
 button:hover {
-  background-color: #b24f84;
-}
+  background-color: #b24f84; }
 
 header {
-  z-index: 10 !important;
-}
+  z-index: 10 !important; }
 
 header .container {
   flex-direction: row;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 header nav {
   flex-direction: row;
   padding-bottom: 0;
-  padding-right: 0px;
-}
+  padding-right: 0px; }
 
 header a {
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
-  color: black;
-}
+  color: black; }
 
 header a:hover {
-  color: blueviolet;
-}
+  color: blueviolet; }
 
 /*<!--carrusel-->*/
 .carouselExampleSlidesOnly {
-  z-index: 10 !important;
-}
+  z-index: 10 !important; }
 
 .carousel-inner button {
   font-size: 1.75em;
@@ -98,15 +82,13 @@ header a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-shadow: 0 0 8 rebeccapurple;
-}
+  text-shadow: 0 0 8 rebeccapurple; }
 
 .carousel-item {
   height: 100vh;
   min-height: 300px;
   background: no-repeat scroll center scroll;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .carousel-item::before {
   content: "";
@@ -117,17 +99,14 @@ header a:hover {
   bottom: 0;
   right: 0;
   background: black;
-  opacity: 0.7;
-}
+  opacity: 0.7; }
 
 .container-fluid {
-  background-image: linear-gradient(135deg, #ff9583, rgba(115, 152, 225, 0.6784313725), #e4e4e4, #cbcbdb, rgba(251, 185, 144, 0.7098039216), rgba(66, 137, 209, 0.7019607843), #e9a718);
-}
+ background-color: #da8a8478; }
 
 .parrafo p {
   display: flex;
-  justify-content: end;
-}
+  justify-content: end; }
 
 /*<!--Cartas principal-->*/
 #img {
@@ -140,86 +119,70 @@ header a:hover {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
-}
+  background-position: center center; }
 
 #img h1 {
-  color: white;
-}
+  color: white; }
 
 #img button {
-  font-size: 1.75em;
-}
+  font-size: 1.75em; }
 
 #nuestras-propuestas {
-  background-image: linear-gradient(135deg, #ff9583, rgba(115, 152, 225, 0.6784313725), #e4e4e4, #cbcbdb, rgba(251, 185, 144, 0.7098039216), rgba(66, 137, 209, 0.7019607843), #e9a718);
+  background-image: linear-gradient(135deg, #ff9583, #7398e1ad, #e4e4e4, #cbcbdb, #fbb990b5, #4289d1b3, #e9a718);
   background-size: auto;
-  color: rgb(255, 255, 255);
-  text-align: center;
-}
+  color: white;
+  text-align: center; }
 
 #nuestras-propuestas .container {
-  padding: 150px 12px;
-}
+  padding: 150px 12px; }
 
 #nuestras-propuestas h2 {
   margin-top: 0;
-  font-size: 3.2em;
-}
+  font-size: 3.2em; }
 
 #nuestras-propuestas p {
-  display: none;
-}
+  display: none; }
 
 #nuestras-propuestas .carta {
   background-position: center center;
   background-size: cover;
   padding: 50px 0px;
   margin: 30px;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 #nuestras-propuestas .programas {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #nuestras-propuestas p {
   display: block;
-  margin-bottom: 30px;
-}
+  margin-bottom: 30px; }
 
 #nuestras-propuestas h2 {
-  font-size: 4em;
-}
+  font-size: 4em; }
 
 #nuestras-propuestas h3 {
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 #nuestras-propuestas .carta {
   padding: 50px;
   background-size: 100% 150px;
   background-repeat: no-repeat;
   background-position-y: 0;
-  background-color: rgb(50, 50, 50);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-}
+  background-color: #323232;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); }
 
 .carta:first-child {
   background-image: linear-gradient(115deg, #ffffff, #f9fafb, #e4e4e4, #cbcbdb, #d98392, #e4d4e2, #ededed);
-  background-size: auto;
-}
+  background-size: auto; }
 
 .carta:nth-child(2) {
   background-image: linear-gradient(145deg, #ffffff, #f9fafb, #e4e4e4, #cbcbdb, #d98392, #e4d4e2, #ededed);
-  background-size: auto;
-}
+  background-size: auto; }
 
 .carta:nth-child(3) {
   background-image: linear-gradient(45deg, #ffffff, #f9fafb, #e4e4e4, #cbcbdb, #d98392, #e4d4e2, #ededed);
-  background-size: auto;
-}
+  background-size: auto; }
 
 /*<!--final -->*/
 #final {
@@ -230,47 +193,38 @@ header a:hover {
   text-align: center;
   background-color: #31367a;
   color: white;
-  height: 45vh;
-}
+  height: 45vh; }
 
 #final h2 {
-  font-size: 9vw;
-}
+  font-size: 9vw; }
 
 #final button {
-  font-size: 5vw;
-}
+  font-size: 5vw; }
 
 #final h2 {
-  font-size: 5em;
-}
+  font-size: 5em; }
 
 #final button {
-  font-size: 2em;
-}
+  font-size: 2em; }
 
 footer p {
   margin: 0;
   padding: 12px;
-  color: rgb(255, 245, 245);
-}
+  color: #fff5f5; }
 
 footer .container {
   height: 150px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-}
+  align-items: flex-end; }
 
 @media (min-width: 850px) {
   header {
     position: fixed;
-    width: 100%;
-  }
+    width: 100%; }
   .pie-pagina {
     width: 100%;
-    background-color: #464647;
-  }
+    background-color: #464647; }
   .pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1200px;
@@ -278,27 +232,22 @@ footer .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
-    padding: 45px 0px;
-  }
+    padding: 45px 0px; }
   .pie-pagina .grupo-1 .box figure {
     width: 100px;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: center; }
   .pie-pagina .grupo-1 .box figure img {
-    width: 250px;
-  }
+    width: 250px; }
   .pie-pagina .grupo-1 .box h2 {
     color: white;
     margin-bottom: 25px;
-    font-size: 20px;
-  }
+    font-size: 20px; }
   .pie-pagina .grupo-1 .box p {
     color: white;
-    margin-bottom: 10px;
-  }
+    margin-bottom: 10px; }
   .pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
@@ -309,23 +258,25 @@ footer .container {
     margin-right: 10px;
     background-color: #3d3e7c;
     text-align: center;
-    transition: all 300ms ease;
-  }
+    transition: all 300ms ease; }
   .pie-pagina .grupo1 .red-social a:hover {
-    color: #760feb;
-  }
+    color: #760feb; }
   .pie-pagina .grupo-2 {
     padding: 15px 10px;
     text-align: center;
-    color: white;
-  }
+    color: white; }
   .pie-pagina .grupo-2 small {
-    font-size: 15px;
-  }
+    font-size: 15px; }
   footer {
-    background-color: rgb(50, 50, 50);
-  }
-}
+    background-color: #323232; } }
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
 /*<!--seccion formulario-->*/
 .form {
   width: 500px;
@@ -334,34 +285,31 @@ footer .container {
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 200px;
-  border-radius: 16px;
-}
+  border-radius: 16px; }
 
 .form h2 {
   color: #fff;
   text-align: center;
   margin: 0;
   font-size: 30px;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .form input, textarea {
   width: 100%;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
-  font-size: 17px;
-}
+  font-size: 17px; }
 
 .form textarea {
   min-height: 100px;
   max-height: 200px;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .parrafo-1 p {
   float: left;
-  position: absolute;
-}
+  position: absolute; }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 425px) {
+  .form h2 {
+    font-size: 1.8rem; } }
