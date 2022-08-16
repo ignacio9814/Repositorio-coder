@@ -1,0 +1,21 @@
+
+/*Pantalla grande*/
+
+
+
+/*Pantallas Medianas*/
+
+@media(max-width:992px){
+    #img, #nuestras-propuestas, .carta, .grupo1 {
+        flex-wrap: wrap;
+    }
+    #nuestras-propuestas p{
+        text-align: center;
+    }
+}
+
+/*Pantallas Celulares*/
+
+@media(max-width:420px){
+
+}
