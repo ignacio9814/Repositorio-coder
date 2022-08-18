@@ -34,7 +34,7 @@
 
     
 .col-md-6 .card {
-        background-image:linear-gradient(135deg, #e3b634, rgb(254 243 184 / 68%), #cba842, #ffffff8c, rgb(252 235 86 / 71%), rgb(216 205 0 / 70%), #ffc107);
+        background-image:linear-gradient(135deg, #e38034d1, rgba(254, 243, 184, 0.68), #cb7742, rgb(205 149 115 / 55%), rgb(255 99 21 / 85%), rgb(223 131 45 / 70%), #ffc107);
         background-size: auto;
         color:rgb(0, 0, 0);
         text-align: center;
@@ -43,7 +43,29 @@
     
 
    
-   
+    
+#Historia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: 
+    url("../img/fondo\ def.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Historia h1{
+    color: white;
+}
+#Historia p{
+    color: white;
+}
+
+
 
   
 
