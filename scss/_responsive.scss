@@ -1,21 +1,18 @@
 
 
-
-
-
-/*Pantallas Medianas*/
-
-@media(max-width:992px){
-    #img, #nuestras-propuestas, .carta, .grupo1 {
-        flex-wrap: wrap;
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+      width: 90%;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 30px;
+      padding: 35px 0px;
     }
-    #nuestras-propuestas p{
-        text-align: center;
-    }
-}
+  }
+  @media (min-width: 850px) {
+    header {
+      position: fixed;
+      width: 100%;
+    }}
 
-/*Pantallas Celulares*/
 
-@media(max-width:420px){
 
-}

@@ -1,46 +1,31 @@
 
 /*<!--Cartas principal-->*/
- .card{
+ 
+
+    
+.card {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
   
+.row{
+    margin-top: 150px;
 }
-.cartas{
-    
-     background-size: cover; 
-    height: 800px;
-    width: 100%;
-    padding-left: 20px;
-    padding-top:  50px;
-    display: inline-block;
-    
+.text-card{
+    margin: 100px;
 }
-.row {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: auto;
-    align-items: flex-start;
-}
-
-    
-.col-md-6 .card {
-        background-image:linear-gradient(135deg, #e38034d1, rgba(254, 243, 184, 0.68), #cb7742, rgb(205 149 115 / 55%), rgb(255 99 21 / 85%), rgb(223 131 45 / 70%), #ffc107);
-        background-size: auto;
-        color:rgb(0, 0, 0);
-        text-align: center;
-       
-    }
-    
+  
+  .col-md-6 .card {
+    background-image: linear-gradient(135deg, rgba(227, 128, 52, 0.8196078431), rgba(254, 243, 184, 0.68), #cb7742, rgba(205, 149, 115, 0.55), rgba(255, 99, 21, 0.85), rgba(223, 131, 45, 0.7), #ffc107);
+    background-size: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
 
    
     
