@@ -1,6 +1,6 @@
    
-    @mixin white-gradient {
-        background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+ @mixin white-gradient {
+        background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0) 100%);
     }
     
     $animationSpeed:40s;
@@ -13,13 +13,13 @@
 
 // Stylo
 .slider {
-	background: white;
+	background : rgb(235, 189, 137);
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
+	height: 400px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
-	width: 960px;
+	width: 1260px;
 	
 	&::before,
 	&::after {
