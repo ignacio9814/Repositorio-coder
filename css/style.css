@@ -13,18 +13,22 @@ html {
 
 /*<!--GENERAL-->*/
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-top: 200px !important;
   background-attachment: fixed;
   margin: 0px;
   background-image: url(../img/fodo\ 86.jpg);
 }
 
+@font-face {
+  font-family: heyaugust;
+  src: url(../fuenteh1.ttf);
+}
 h1 {
   font-size: 3.5em;
   text-align: center;
   color: aliceblue;
- font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: heyaugust;
 }
 
 h2 {
@@ -137,31 +141,134 @@ header a:hover {
 }
 
 /*<!--Cartas principal-->*/
-.card {
+.contenedor {
+  max-width: 1200px;
+  margin: 50px auto;
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
-.row {
-  margin-top: 150px;
+.contenedor_tarjeta {
+  margin: 20px;
 }
 
-.text-card {
-  margin: 100px;
+.contenedor_tarjeta a {
+  display: inline-block;
 }
 
-.col-md-6 .card {
-  background-image: linear-gradient(135deg, rgba(227, 128, 52, 0.8196078431), rgba(254, 243, 184, 0.68), #cb7742, rgba(205, 149, 115, 0.55), rgba(255, 99, 21, 0.85), rgba(223, 131, 45, 0.7), #ffc107);
-  background-size: auto;
-  color: rgb(0, 0, 0);
-  text-align: center;
+.contenedor_tarjeta:hover figure {
+  transform: perspective(600px) rotateY(180deg);
+  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
+figure {
+  width: 300px;
+  height: 350px;
+  margin: 0;
+  position: relative;
+  transition: all ease 0.5s;
+  transform-style: preserve-3d;
+  /* Nota:
+  	Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+  	ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+  */
+  transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: all ease 0.5s;
+}
+
+figure .frontal {
+  display: block;
+  background: #000;
+  /* Podemos ocultar la imagen al da la vuelta si lo queremos */
+  /*backface-visibility: hidden;*/
+}
+
+figure .trasera {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  color: #fff;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera {
+  background: rgba(223, 234, 241, 0.7);
+  background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223, 234, 241, 0.7)), color-stop(100%, rgb(15, 99, 144)));
+  background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
+  background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
+  background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
+  background: linear-gradient(to bottom, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#dfeaf1", endColorstr="#0f6390", GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera {
+  background: rgba(251, 232, 202, 0.7);
+  background: -moz-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(68, 255, 124) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251, 232, 202, 0.7)), color-stop(100%, rgba(22, 211, 79, 0.616)));
+  background: -webkit-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(25, 170, 85) 100%);
+  background: -o-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(39, 194, 25) 100%);
+  background: -ms-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(31, 201, 59) 100%);
+  background: linear-gradient(to bottom, rgba(251, 232, 202, 0.7) 0%, rgb(2, 177, 46) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fbe8ca", endColorstr="#192c48", GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(3) figure .trasera {
+  background: rgba(95, 58, 53, 0.7);
+  background: -moz-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95, 58, 53, 0.7)), color-stop(100%, rgb(221, 32, 47)));
+  background: -webkit-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
+  background: -o-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
+  background: -ms-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
+  background: linear-gradient(to bottom, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#5f3a35", endColorstr="#dd202f", GradientType=0 );
+}
+
+figure .trasera .titulo {
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+figure .trasera hr {
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+figure .trasera p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  figure .trasera {
+    /*position: relative;*/
+    backface-visibility: visible;
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(0deg);
+  }
+}
 #Historia {
   display: flex;
   align-items: center;
@@ -316,6 +423,7 @@ footer {
   margin-bottom: 30px;
   margin-top: 45px;
   color: brown;
+  background-color: antiquewhite;
 }
 
 .container-form a {
@@ -425,139 +533,3 @@ footer {
 }
 
 /*# sourceMappingURL=style.css.map */
-.contenedor {
-	max-width: 1200px;
-	margin:50px auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.contenedor_tarjeta {
-	margin: 20px;
-}
-
-.contenedor_tarjeta a {
-	display: inline-block;
-}
-
-.contenedor_tarjeta:hover figure {
-	transform: perspective(600px) rotateY(180deg);
-	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
-	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
-}
-
-.contenedor_tarjeta:hover figure img {
-	/* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
-	/*filter:blur(2px);*/
-}
-
-figure {
-	width: 300px;
-	height: 350px;
-	margin:0;
-	position: relative;
-	transition: all ease .5s;
-	transform-style: preserve-3d;
-	/* Nota:
-		Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
-		ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
-	*/
-	transform: perspective(600px) rotateY(0deg);
-}
-
-figure .frontal,
-figure .trasera {
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	transition: all ease .5s;
-}
-
-figure .frontal {
-	display: block;
-	background: #000;
-
-	/* Podemos ocultar la imagen al da la vuelta si lo queremos */
-	/*backface-visibility: hidden;*/
-}
-
-figure .trasera {
-	position: absolute;
-	top: 0;
-	padding: 20px;
-	color: #fff;
-	transform: perspective(600px) rotateY(180deg);
-	backface-visibility: hidden;
-	overflow: auto;
-}
-
-.contenedor_tarjeta:nth-child(1) figure .trasera{
-	background: rgba(223,234,241,0.7);
-	background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
-	background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
-	background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
-	background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
-	background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
-}
-
-.contenedor_tarjeta:nth-child(2) figure .trasera{
-	background: rgba(251,232,202,0.7);
-	background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
-	background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
-	background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
-	background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
-	background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
-}
-
-.contenedor_tarjeta:nth-child(3) figure .trasera{
-	background: rgba(95,58,53,0.7);
-	background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
-	background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
-	background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
-	background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
-	background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
-}
-
-figure .trasera .titulo {
-	color: #fff;
-	font-weight: normal;
-	margin-bottom: 20px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-}
-
-figure .trasera hr {
-	height: 2px;
-	background: #fff;
-	border: none;
-	margin-bottom: 20px;
-	opacity: .5;
-}
-
-figure .trasera p {
-	font-family: 'Open Sans', sans-serif;
-	line-height: 22px;
-	font-size: 14px;
-}
-
-@media screen and (max-width: 992px) { 
-	figure .trasera {
-		/*position: relative;*/
-		backface-visibility:visible;
-		transform: perspective(600px) rotateY(0deg);
-	}
-
-	.contenedor_tarjeta:hover figure {
-		transform: perspective(600px) rotateY(0deg);	
-	}
-
-}
