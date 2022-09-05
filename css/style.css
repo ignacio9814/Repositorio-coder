@@ -29,10 +29,14 @@ h1 {
   text-align: center;
   color: aliceblue;
   font-family: heyaugust;
+  background: rgba(115, 23, 7, 0.6784313725);
 }
 
 h2 {
   font-size: 2.7em;
+  text-align: center;
+  color: aliceblue;
+  font-family: heyaugust;
 }
 
 h3 {
@@ -63,7 +67,7 @@ button {
 }
 
 button:hover {
-  background-color: #b24f84;
+  background-color: #d61414;
 }
 
 header {
@@ -89,7 +93,7 @@ header a {
 }
 
 header a:hover {
-  color: blueviolet;
+  color: rgb(43, 61, 226);
 }
 
 /*<!--carrusel-->*/
@@ -142,8 +146,8 @@ header a:hover {
 
 /*<!--Cartas principal-->*/
 .contenedor {
-  max-width: 1200px;
-  margin: 50px auto;
+  max-width: 1930px;
+  margin-top: 150px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -156,6 +160,7 @@ header a:hover {
 
 .contenedor_tarjeta a {
   display: inline-block;
+  text-decoration: none;
 }
 
 .contenedor_tarjeta:hover figure {
@@ -172,10 +177,6 @@ figure {
   position: relative;
   transition: all ease 0.5s;
   transform-style: preserve-3d;
-  /* Nota:
-  	Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
-  	ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
-  */
   transform: perspective(600px) rotateY(0deg);
 }
 
@@ -190,8 +191,7 @@ figure .trasera {
 figure .frontal {
   display: block;
   background: #000;
-  /* Podemos ocultar la imagen al da la vuelta si lo queremos */
-  /*backface-visibility: hidden;*/
+  backface-visibility: hidden;
 }
 
 figure .trasera {
@@ -206,23 +206,23 @@ figure .trasera {
 
 .contenedor_tarjeta:nth-child(1) figure .trasera {
   background: rgba(223, 234, 241, 0.7);
-  background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223, 234, 241, 0.7)), color-stop(100%, rgb(15, 99, 144)));
-  background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: linear-gradient(to bottom, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
+  background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(236, 99, 8) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223, 234, 241, 0.7)), color-stop(100%, rgb(245, 121, 4)));
+  background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgba(224, 95, 20, 0.925) 100%);
+  background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(231, 106, 4) 100%);
+  background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(243, 134, 10) 100%);
+  background: linear-gradient(to bottom, rgba(223, 234, 241, 0.7) 0%, rgb(236, 94, 11) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#dfeaf1", endColorstr="#0f6390", GradientType=0 );
 }
 
 .contenedor_tarjeta:nth-child(2) figure .trasera {
   background: rgba(251, 232, 202, 0.7);
-  background: -moz-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(68, 255, 124) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251, 232, 202, 0.7)), color-stop(100%, rgba(22, 211, 79, 0.616)));
-  background: -webkit-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(25, 170, 85) 100%);
-  background: -o-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(39, 194, 25) 100%);
-  background: -ms-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(31, 201, 59) 100%);
-  background: linear-gradient(to bottom, rgba(251, 232, 202, 0.7) 0%, rgb(2, 177, 46) 100%);
+  background: -moz-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(229, 233, 11) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251, 232, 202, 0.7)), color-stop(100%, rgba(250, 225, 2, 0.616)));
+  background: -webkit-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(236, 240, 25) 100%);
+  background: -o-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(218, 233, 10) 100%);
+  background: -ms-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(190, 201, 31) 100%);
+  background: linear-gradient(to bottom, rgba(251, 232, 202, 0.7) 0%, rgb(248, 225, 18) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fbe8ca", endColorstr="#192c48", GradientType=0 );
 }
 
@@ -259,16 +259,6 @@ figure .trasera p {
   font-size: 14px;
 }
 
-@media screen and (max-width: 1200px) {
-  figure .trasera {
-    /*position: relative;*/
-    backface-visibility: visible;
-    transform: perspective(600px) rotateY(0deg);
-  }
-  .contenedor_tarjeta:hover figure {
-    transform: perspective(600px) rotateY(0deg);
-  }
-}
 #Historia {
   display: flex;
   align-items: center;
@@ -290,34 +280,17 @@ figure .trasera p {
   color: white;
 }
 
-/*<!--final -->*/
-#final {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#somos-proya .container-1 {
   text-align: center;
-  background-color: #31367a;
-  color: white;
-  height: 45vh;
+  margin-top: 100px;
 }
 
-#final h2 {
-  font-size: 9vw;
+#somos-proya .container-1 p {
+  background-color: rgba(230, 156, 61, 0.479);
+  color: #fff;
 }
 
-#final button {
-  font-size: 5vw;
-}
-
-#final h2 {
-  font-size: 5em;
-}
-
-#final button {
-  font-size: 2em;
-}
-
+/*<!--final -->*/
 footer p {
   margin: 0;
   padding: 12px;
@@ -325,7 +298,7 @@ footer p {
 }
 
 footer .container {
-  height: 150px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -334,7 +307,7 @@ footer .container {
 .pie-pagina {
   margin-top: 150px;
   width: 100%;
-  background-color: rgba(71, 70, 71, 0.5803921569);
+  background-color: rgba(237, 181, 88, 0.4);
 }
 
 .pie-pagina .grupo-1 {
@@ -352,17 +325,18 @@ footer .container {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .pie-pagina .grupo-1 .box figure img {
   width: 250px;
 }
 
-.pie-pagina .grupo-1 .box h2 {
+.pie-pagina .grupo-1 .box h3 {
   color: white;
   margin-bottom: 25px;
   font-size: 20px;
+  display: flex;
+  justify-content: start;
 }
 
 .pie-pagina .grupo-1 .box p {
@@ -378,7 +352,7 @@ footer .container {
   line-height: 45px;
   color: white;
   margin-right: 10px;
-  background-color: #3d3e7c;
+  background-color: rgb(255, 70, 70);
   text-align: center;
   transition: all 300ms ease;
 }
@@ -402,78 +376,116 @@ footer {
 }
 
 /*<!--seccion formulario-->*/
-.container-form {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.logo {
+  text-align: center;
+  font-size: 3em;
+}
+
+.logo span {
+  color: #fce2a9;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(20, 20, 20, 0.993);
+}
+
+.contact-wrapper > * {
+  padding: 1em;
+}
+
+.contact-form {
+  background: rgba(73, 22, 22, 0.7137254902);
+}
+
+.contact-form p {
+  color: #fff;
+}
+
+.contact-form form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  margin-top: 90px;
+  grid-template-columns: 1fr 1fr;
 }
 
-.container-form h2 {
-  margin-bottom: 15px;
-  font-size: 35px;
+.contact-form form label {
+  display: block;
 }
 
-.container-form p {
-  font-size: 17px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-  margin-top: 45px;
-  color: brown;
-  background-color: antiquewhite;
+.contact-form form p {
+  margin: 0;
+  padding: 1em;
 }
 
-.container-form a {
-  font-size: 17px;
-  display: inline-block;
-  text-decoration: none;
+.contact-form form .block {
+  grid-column: 1/3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
   width: 100%;
-  margin-bottom: 15px;
-  color: black;
-  font-weight: 700;
-}
-
-.container-form a i {
-  color: orange;
-  margin-right: 10px;
-}
-
-.container-form form .campo, textarea {
-  width: 100%;
-  padding: 15px 10px;
-  font-size: 16px;
-  border: 1px solid #dbdbdb;
-  margin-bottom: 20px;
-  border-radius: 3px;
-  outline: 0px;
-}
-
-.container-form form textarea {
-  max-width: 530px;
-  min-width: 530px;
-  min-height: 140px;
-  max-height: 150px;
-}
-
-.container-form .btn-enviar {
-  padding: 15px;
-  font-size: 16px;
+  padding: 0.7em;
   border: none;
-  outline: 0px;
-  background: orange;
-  color: white;
-  border-radius: 3px;
-  cursor: pointer;
-  transition: all 300ms ease;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #d63031;
 }
 
-.container-form .btn-enviar:hover {
-  background: #e39403;
+.contact-form form button {
+  background: #B70E21;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background: #d63031;
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  background: rgb(243, 238, 238);
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* LARGE SIZE */
+@media (min-width: 1930px) {
+  body {
+    padding: 0 4em;
+  }
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .contact-wrapper > * {
+    padding: 2em;
+  }
+  .contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: left;
+  }
+}
 @media screen and (max-width: 800px) {
   .pie-pagina .grupo-1 {
     width: 90%;
@@ -486,6 +498,23 @@ footer {
   header {
     position: fixed;
     width: 100%;
+  }
+}
+@media screen and (max-width: 1930px) {
+  body h1 {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body h1 {
+    font-size: 3.5rem;
+  }
+  figure .trasera {
+    backface-visibility: visible;
+    transform: perspective(600px) rotateY(0deg);
+  }
+  .contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(0deg);
   }
 }
 @keyframes scroll {

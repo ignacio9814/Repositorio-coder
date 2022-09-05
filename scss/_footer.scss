@@ -2,32 +2,7 @@
   /*<!--final -->*/
 
 
-  #final{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color:#31367a;
-    color: white;
-    height: 45vh;
-}
 
-#final h2{
-    font-size: 9vw;
-}
-
-#final button{
-    font-size: 5vw;
-}
-
-#final h2{
-    font-size: 5em;
-}
-
-#final button{
-    font-size: 2em;
-}
 footer p{
     margin: 0;
     padding: 12px;
@@ -35,7 +10,7 @@ footer p{
 }
 
 footer .container{
-    height: 150px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -44,9 +19,9 @@ footer .container{
 
 
 .pie-pagina{
-    margin-top: 150px;
+margin-top: 150px;
 width: 100%;
-background-color: #47464794;
+background-color: rgb(237 181 88 / 40%);
 }
 .pie-pagina .grupo-1{
 width: 100%;
@@ -56,22 +31,31 @@ display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-gap: 50px;
 padding: 45px 0px;
+
+
 }
 .pie-pagina .grupo-1 .box figure {
 width: 100px;
 height: 100%;
 display: flex;
 justify-content: center;
-align-items: center;
+
+
 
 }
+
+
+
 .pie-pagina .grupo-1 .box figure img{
 width: 250px;
+
 }
-.pie-pagina .grupo-1 .box h2{
+.pie-pagina .grupo-1 .box h3{
 color: white;
 margin-bottom: 25px;
 font-size: 20px;
+display: flex;
+justify-content: start;
 }
 .pie-pagina .grupo-1 .box p{ 
 color: white;
@@ -86,7 +70,7 @@ height: 45px;
 line-height: 45px;
 color: white;
 margin-right: 10px;
-background-color: #3d3e7c;
+background-color: rgb(255, 70, 70);
 text-align: center;
 transition: all 300ms ease;
 
